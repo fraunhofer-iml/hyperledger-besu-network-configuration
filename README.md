@@ -62,7 +62,7 @@ This makes it an ideal starting point for developers looking to explore or build
 
 ### 🛠️ Built With
 
-- [![HyperledgerBesu][hyperledgerbesu-shield]][hyperledgerbesu-url]
+- [![Hyperledger Besu][hyperledgerbesu-shield]][hyperledgerbesu-url]
 - [![Docker][docker-shield]][docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -195,7 +195,7 @@ Michael Pichura: michael.pichura@iml.fraunhofer.de
 [issues-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/issues
 [license-shield]: https://img.shields.io/github/license/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
 [license-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/blob/main/LICENSE
-[hyperledgerbesu-shield]: https://img.shields.io/badge/blockchain-Hyperledger%20Besu-F26822?style=flat&logo=hyperledger
+[hyperledgerbesu-shield]: https://img.shields.io/badge/blockchain-Hyperledger%20Besu-F26822?style=flat&logo=ethereum
 [hyperledgerbesu-url]: https://besu.hyperledger.org/
 [docker-shield]: https://img.shields.io/badge/container-Docker-2496ED?style=flat&logo=docker
 [docker-url]: https://www.docker.com/
