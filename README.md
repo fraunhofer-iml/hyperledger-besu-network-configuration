@@ -1,8 +1,13 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
+[![Stars][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+[![Watchers][watchers-shield]][watchers-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Commit Activity][commitactivity-shield]][commitactivity-url]
+[![Last Commit][lastcommit-shield]][lastcommit-url]
+[![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
 
 <br />
 <div align="center">
@@ -174,12 +179,18 @@ Michael Pichura: michael.pichura@iml.fraunhofer.de
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
-[contributors-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
-[forks-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/network/members
 [stars-shield]: https://img.shields.io/github/stars/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
 [stars-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/stargazers
+[forks-shield]: https://img.shields.io/github/forks/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
+[forks-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/forks
+[watchers-shield]: https://img.shields.io/github/watchers/fraunhofer-iml/hyperledger-besu-network-configuration?style=for-the-badge
+[watchers-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/watchers
+[contributors-shield]: https://img.shields.io/github/contributors/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
+[contributors-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/graphs/contributors
+[commitactivity-shield]: https://img.shields.io/github/commit-activity/y/fraunhofer-iml/hyperledger-besu-network-configuration?style=for-the-badge
+[commitactivity-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/graphs/commit-activity
+[lastcommit-shield]: https://img.shields.io/github/last-commit/fraunhofer-iml/hyperledger-besu-network-configuration?style=for-the-badge
+[lastcommit-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/commits/main
 [issues-shield]: https://img.shields.io/github/issues/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
 [issues-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/issues
 [license-shield]: https://img.shields.io/github/license/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
