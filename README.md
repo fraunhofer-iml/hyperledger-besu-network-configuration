@@ -194,7 +194,7 @@ Michael Pichura: michael.pichura@iml.fraunhofer.de
 [issues-shield]: https://img.shields.io/github/issues/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
 [issues-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/issues
 [license-shield]: https://img.shields.io/github/license/fraunhofer-iml/hyperledger-besu-network-configuration.svg?style=for-the-badge
-[license-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/LICENSE
+[license-url]: https://github.com/fraunhofer-iml/hyperledger-besu-network-configuration/blob/main/LICENSE
 [hyperledgerbesu-shield]: https://img.shields.io/badge/blockchain-Hyperledger%20Besu-F26822?style=flat&logo=hyperledger
 [hyperledgerbesu-url]: https://besu.hyperledger.org/
 [docker-shield]: https://img.shields.io/badge/container-Docker-2496ED?style=flat&logo=docker
