@@ -154,8 +154,6 @@ simply open an issue with the tag "enhancement".
   <img src="https://contrib.rocks/image?repo=fraunhofer-iml/hyperledger-besu-network-configuration" alt="contrib.rocks image" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📜 License
@@ -176,6 +174,7 @@ Michael Pichura: michael.pichura@iml.fraunhofer.de
 
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Img Shields](https://shields.io)
+- [contrib.rocks](https://contrib.rocks)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
