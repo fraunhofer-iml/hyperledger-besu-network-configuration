@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="5">
+
+    <Properties>
+        <Property name="root.log.level">WARN</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console"
+                 target="SYSTEM_OUT">
+            <PatternLayout alwaysWriteExceptions="false"
+                           pattern='{"timestamp":"%d{ISO8601}","level":"%level","container":"${hostName}","thread":"%thread","class":"%class","method":"%method","message":"%msg","throwable":"%enc{%throwable}{JSON}"}%n'
+            />
+        </Console>
+        <RollingFile name="RollingFile"
+                     fileName="/opt/besu/logs/besu-${env:HOSTNAME}.log"
+                     filePattern="/opt/besu/logs/besu-${env:HOSTNAME}.log">
+            <PatternLayout alwaysWriteExceptions="false"
+                           pattern='{"timestamp":"%d{ISO8601}","level":"%level","container":"${hostName}","thread":"%thread","class":"%class","method":"%method","message":"%msg","throwable":"%enc{%throwable}{JSON}"}%n'
+            />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="${sys:root.log.level}">
+            <AppenderRef ref="RollingFile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

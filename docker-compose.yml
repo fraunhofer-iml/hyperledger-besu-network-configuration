@@ -1,0 +1,98 @@
+# Copyright Fraunhofer Institute for Material Flow and Logistics
+#
+# Licensed under the Apache License, Version 2.0 (the "License").
+# For details on the licensing terms, see the LICENSE file.
+# SPDX-License-Identifier: Apache-2.0
+
+services:
+  alice:
+    build:
+      args:
+        - NAME=alice
+      context: nodes/alice
+      dockerfile: ../Dockerfile
+    ports:
+      - "9011:8545" # HTTP
+      - "9012:8546" # WS
+      - "9013:30303" # P2P
+    restart: always
+    container_name: besu-alice
+    volumes:
+      - ./nodes/docker-entrypoint.sh:/docker-entrypoint.sh
+      - ./nodes/genesis.json:/opt/besu/data/genesis.json
+      - ./nodes/log4j2-config.xml:/opt/besu/data/log4j2-config.xml
+      - ./nodes/static-nodes.json:/opt/besu/data/static-nodes.json
+    networks:
+      besu-network:
+        ipv4_address: 10.0.0.10
+
+  bob:
+    build:
+      args:
+        - NAME=bob
+      context: nodes/bob
+      dockerfile: ../Dockerfile
+    ports:
+      - "9021:8545" # HTTP
+      - "9022:8546" # WS
+      - "9023:30303" # P2P
+    restart: always
+    container_name: besu-bob
+    volumes:
+      - ./nodes/docker-entrypoint.sh:/docker-entrypoint.sh
+      - ./nodes/genesis.json:/opt/besu/data/genesis.json
+      - ./nodes/log4j2-config.xml:/opt/besu/data/log4j2-config.xml
+      - ./nodes/static-nodes.json:/opt/besu/data/static-nodes.json
+    networks:
+      besu-network:
+        ipv4_address: 10.0.0.20
+
+  carol:
+    build:
+      args:
+        - NAME=carol
+      context: nodes/carol
+      dockerfile: ../Dockerfile
+    ports:
+      - "9031:8545" # HTTP
+      - "9032:8546" # WS
+      - "9033:30303" # P2P
+    restart: always
+    container_name: besu-carol
+    volumes:
+      - ./nodes/docker-entrypoint.sh:/docker-entrypoint.sh
+      - ./nodes/genesis.json:/opt/besu/data/genesis.json
+      - ./nodes/log4j2-config.xml:/opt/besu/data/log4j2-config.xml
+      - ./nodes/static-nodes.json:/opt/besu/data/static-nodes.json
+    networks:
+      besu-network:
+        ipv4_address: 10.0.0.30
+
+  dan:
+    build:
+      args:
+        - NAME=dan
+      context: nodes/dan
+      dockerfile: ../Dockerfile
+    ports:
+      - "9041:8545" # HTTP
+      - "9042:8546" # WS
+      - "9043:30303" # P2P
+    restart: always
+    container_name: besu-dan
+    volumes:
+      - ./nodes/docker-entrypoint.sh:/docker-entrypoint.sh
+      - ./nodes/genesis.json:/opt/besu/data/genesis.json
+      - ./nodes/log4j2-config.xml:/opt/besu/data/log4j2-config.xml
+      - ./nodes/static-nodes.json:/opt/besu/data/static-nodes.json
+    networks:
+      besu-network:
+        ipv4_address: 10.0.0.40
+
+networks:
+  besu-network:
+    name: besu-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24
