@@ -154,6 +154,8 @@ simply open an issue with the tag "enhancement".
   <img src="https://contrib.rocks/image?repo=fraunhofer-iml/hyperledger-besu-network-configuration" alt="contrib.rocks image" />
 </a>
 
+Made with [contrib.rocks](https://contrib.rocks).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📜 License
